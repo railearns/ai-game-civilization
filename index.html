@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Civilization Viewer</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #111;
+      color: #eee;
+      margin: 0;
+      padding: 1rem;
+      display: flex;
+      gap: 1rem;
+    }
+    #left, #right {
+      flex: 1;
+      border: 1px solid #333;
+      padding: 0.5rem;
+      overflow-y: auto;
+      max-height: 95vh;
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+    .tribe {
+      border: 1px solid #444;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      background: #1b1b1b;
+    }
+    .agent {
+      font-size: 0.9rem;
+      margin-left: 1rem;
+    }
+    .timeline-item {
+      border-bottom: 1px solid #333;
+      padding: 0.25rem 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="left">
+    <h1>AI Civilization</h1>
+    <p>Tick: <span id="tick">-</span></p>
+    <p>Weather: <span id="weather">-</span></p>
+
+    <h2>Tribes</h2>
+    <div id="tribes"></div>
+
+    <h2>Agents</h2>
+    <div id="agents"></div>
+  </div>
+
+  <div id="right">
+    <h2>Timeline</h2>
+    <div id="timeline"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
